@@ -40,13 +40,17 @@ class Firebase {
             if (db === undefined) {
                 return {error: 'abertura do db falhou, db [NULL]'}
             }
-            var colletions = await db.listCollections();
-            console.log('colletions:', colletions);
+            // var colletions = await db.listCollections();
+            // console.log('colletions:', colletions);
 
             const moradoresRef = db.collection('morador');
-            var moradores = await moradoresRef.get();
+            var retorno = await moradoresRef.get();
+            var moradores = retorno.docs.map((doc: any) => ({
+                ...doc.data(),
+                uid: doc.id
+            }));
  
-            return {moradores, colletions};
+            return {moradores : moradores.docs};
         } catch (error: any) {
             return {error: error.message, origem: 'obterMoradores exception'};
         }
