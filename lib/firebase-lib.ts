@@ -50,7 +50,7 @@ class Firebase {
                 uid: doc.id
             }));
 
-            return {moradores : moradores.docs};
+            return {moradores : moradores};
         } catch (error: any) {
             return {error: error.message, origem: 'obterMoradores exception'};
         }
