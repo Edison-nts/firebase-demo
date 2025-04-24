@@ -44,13 +44,14 @@ class Firebase {
             // console.log('colletions:', colletions);
 
             const moradoresRef = db.collection('morador');
-            var docs = await moradoresRef.get();
-            var moradores = docs.map((doc: any) => ({
-                ...doc.data(),
-                uid: doc.id
-            }));
+            var response = await moradoresRef.get(); 
+             
+            // var moradores = docs.map((doc: any) => ({
+            //     ...doc.data(),
+            //     uid: doc.id
+            // }));
 
-            return {moradores : moradores};
+            return {response, docs: response.docs, data: response.data};
         } catch (error: any) {
             return {error: error.message, origem: 'obterMoradores exception'};
         }
