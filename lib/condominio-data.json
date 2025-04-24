@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "condominio-garavelo",
+  "private_key_id": "64e6ae7581a6c6e402cdad88c7670cd0edd79738",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvBd3VB8lbDqkx\n8CGpDVGZ85GfB++HIJ1RlKxuHnGKgbL+KYbN63ZRKI7H1gjInOYWbIC4zv7EYzIS\nldxDlgGSgm2BoHoTSZwdOzlsk7m0rLUvUuDOAXW5tf4lW4f/UYTP7csXBB+x/hAq\n3z3EzrkVYydtVT5SUl8uBuJ/JXa1Liqnac5kWIGe5nAktBQn8kHUwvXu7ETf1qtX\ne20rVBYCXOOmuZ5Fu7pOmEkrfqbiCaulgyt6YfzdizROFsetJLFVGUK86yP7UfGm\nOtfQyc6QkpSgsYIGM8A+1zgjk4KBSxWJMspgvq+WaAFOpa8oWT8n9ktHWgZB+aIU\nI2V/+kYVAgMBAAECggEAI6rK46xkDNHmif45JdXIgNqhnOqFliB/3s2w+/npQoQe\n4Wu+BH3NDUn6GuBTxuoue3heHQtV4NikLiRrEDzkEiLRRR7acc7I6S4WDDnomNiv\nTbcSh/jFMHTVl3BZPR80NRltD0IwYVn4mnwG/vHvxtt/f+jku+r8aYlOpAGS+OXa\npvbz7ZwwUbuc1mCuZnH6xsfUTIU3QQzwq+4/RZYHcXLHWqF7H9ROL/Qr9nWmeqC0\nqH3BYRxVX9jZTVulVDNlAVgExnhvzGvuzs4T7aHc0y6k34pVTo+F3jQeH4qeP8Q9\nufWaVRDi4eYmp4rSccSiwML/r84mD7NOFHZRjBjg4QKBgQDiATPjE6QYBIWybNUE\nBpe4lay+wUT23yG2xm0NDpFcYnRpz62oWrGqHvIZ6a5t83h8TtX8oH633DeYodnl\nnTcLztlHaJGKUeonOAQsgFiGpthb2Mk6UR/xvx8ZBYKyLpsanima3fDnjjRDRsAO\n+l6jxkwnumerg5gJwx6B2mIeEQKBgQDGQH4vY8FwSN3g/1RsldmskX0R+dKXNdjG\nvPPmfmW4g2kRs4gFfvEk8yhAZoSnOFKTiUW+okRxU/mtjX4+KJCNdr4RRINX4SHh\nUoIZ1Wp1N00sWMkk95WfypmNPD3EXUJDC0BOu4wBxUQwAqySby/4e6vCctVROsaA\nEEzCjf/zxQKBgQCzofUV1bSlimKh0LL3Ai5xfjXRYFhqSCvJ1Kk0qZGL9o1E1NbY\na02vQ+11/zCvH8dyNk8K/p35kUV3QZ2pTW5FKmG0yj5zzGvqRDG9FT5HuDFbv1Eh\n0v0q7pfPEXwyF60cWP4Eo8copPSRTJi2zvWOArzhDt37ixq7F6UV3PgDoQKBgAfi\nHKJpxxFd9GS0Anlm5Ab2qhCC7JrSq1ILxW8O66CQqSbpCqmdSJ19hcY5zWCQ3se7\nF6ji7vHKswzxqWlzV3wokppBLS/bZet9ymqYj+klT85JoYX0ymBWQBDbqmEajD36\nPo5i6shPPczi7lXMUg4BbO0If+8A9U+2VjcOSnU5AoGAaD6ArlJOwOefs31fOD2Q\nzpBRvx1SxSakdYRyviIfGbcrQeStSpKEwvV6FcKQ1O8pmOL5iAbIzhlWkCMA9Eot\nrc026x/MCi/ILfmcxlUG2TxfaaHDF07UeElCa6cFnw2X4RipaaNhj0lrvf9uPSKT\n401Pv3tYB+9pZe9KBUY95Oo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@condominio-garavelo.iam.gserviceaccount.com",
+  "client_id": "113737140214571334255",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40condominio-garavelo.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
