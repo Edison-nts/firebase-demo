@@ -3,6 +3,8 @@
 /firebase-debug.*.log
 .firebaserc
 
+node_modules
+
 # Firebase Hosting
 /firebase.json
 *.cache
