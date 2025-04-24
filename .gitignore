@@ -1,12 +1,12 @@
 # Firebase build and deployment files
 /firebase-debug.log
 /firebase-debug.*.log
-.firebaserc
+# .firebaserc
 
 node_modules
 
 # Firebase Hosting
-/firebase.json
+
 *.cache
 hosting/.cache
 
@@ -28,3 +28,6 @@ yarn-error.log*
 
 # Environment files (local configs)
 /.env.*
+
+.next
+
