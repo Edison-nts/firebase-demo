@@ -53,7 +53,8 @@ class Firebase {
             var moradores:any[] = [];
 
             response.docs.forEach((doc: any) => {
-                moradores.push({doc, id: doc.id, data: doc.data()})
+                const data = doc.data();
+                moradores.push({...data, id: doc.id})
             });
              
             // var moradores = docs.map((doc: any) => ({
