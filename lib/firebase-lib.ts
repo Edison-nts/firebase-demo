@@ -45,13 +45,23 @@ class Firebase {
 
             const moradoresRef = db.collection('morador');
             var response = await moradoresRef.get(); 
+
+            if (response.empty) {
+                return {mensagem: 'nenhum registro encontrado'}
+            }
+
+            var moradores:any[] = [];
+
+            response.docs.forEach((doc: any) => {
+                moradores.push({doc, id: doc.id, data: doc.data()})
+            });
              
             // var moradores = docs.map((doc: any) => ({
             //     ...doc.data(),
             //     uid: doc.id
             // }));
 
-            return {response, docs: response.docs, data: response.data};
+            return {moradores};
         } catch (error: any) {
             return {error: error.message, origem: 'obterMoradores exception'};
         }
