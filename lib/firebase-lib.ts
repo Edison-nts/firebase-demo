@@ -33,38 +33,36 @@ class Firebase {
     }
 
     async obterMoradores () {
+        return await this.obterLista('morador', undefined);
+    }
+
+    async obterLista(collection: string, query: any) {
         try {
             if (db === undefined) {
                 this.open();
             }
             if (db === undefined) {
-                return {error: 'abertura do db falhou, db [NULL]'}
+                return {sucesso: false, mensagem: 'abertura do db falhou, db [NULL]'}
             }
-            // var colletions = await db.listCollections();
-            // console.log('colletions:', colletions);
 
-            const moradoresRef = db.collection('morador');
-            var response = await moradoresRef.get(); 
+            const ref = db.collection(collection);
+            var response = query === undefined ? await ref.get() : await ref.query(query).get();
 
             if (response.empty) {
-                return {mensagem: 'nenhum registro encontrado'}
+                return {sucesso: false, mensagem: 'nenhum registro encontrado'}
             }
 
-            var moradores:any[] = [];
+            var docs:any[] = [];
 
             response.docs.forEach((doc: any) => {
                 const data = doc.data();
-                moradores.push({...data, id: doc.id})
+                docs.push({id: doc.id, data})
             });
-             
-            // var moradores = docs.map((doc: any) => ({
-            //     ...doc.data(),
-            //     uid: doc.id
-            // }));
 
-            return {moradores};
+            return {sucesso: true, mensagem: 'OK', docs};
+
         } catch (error: any) {
-            return {error: error.message, origem: 'obterMoradores exception'};
+            return {sucesso: false, mensagem: 'EXCEPTION:' + error.message};
         }
     }
 }
